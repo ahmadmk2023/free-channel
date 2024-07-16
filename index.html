@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Video with JWPlayer</title>
+    <script src="https://ssl.p.jwpcdn.com/player/v/8.18.4/jwplayer.js"></script>
+    <script type="text/javascript">
+        jwplayer.key = "W7zSm81+mmIsg7F+fyHRKhF3ggLkTqtGMhvI92kbqf/ysE99";
+    </script>
+    <style type="text/css" media="screen">
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        #megaplay {
+            width: 100%!important;
+            height: 100%!important;
+            overflow: hidden;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="megaplay"></div>
+
+    <script type="text/javascript">
+        var player = jwplayer("megaplay");
+        player.setup({
+            file: "http://localhost:8080/https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/index.m3u8",
+            type: "hls",
+            aspectratio: "16:9",
+            primary: "html5",
+            autostart: true,
+            preload: "auto",
+            image: "https://jwplayer.com/wp-content/uploads/2022/11/JWP-logo.svg",
+            advertising: {
+                client: "vast",
+                tag: ""
+            },
+            skin: {
+                name: "megaplay"
+            },
+            logo: {
+                file: "https://jwplayer.com/wp-content/uploads/2022/11/JWP-logo.svg"
+            },
+            captions: {
+                color: "#f3f368",
+                fontSize: 16,
+                backgroundOpacity: 0,
+                fontfamily: "Helvetica",
+                edgeStyle: "raised"
+            }
+        });
+
+        player.on("setupError", function() {
+            alert("Server Error! Please contact us to fix it asap. Thank you!");
+        });
+
+        player.on("error", function() {
+            alert("Server Error! Please contact us to fix it asap. Thank you!");
+        });
+    </script>
+</body>
+</html>
