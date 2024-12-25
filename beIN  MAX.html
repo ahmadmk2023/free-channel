@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>beIN SPORTS MAX</title>
   <link href="logo/0.png" rel="icon" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -305,13 +303,6 @@ text-decoration:none;
   50% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
-
-   main {
-    padding: 5px;position: relative;
-    margin-top: 30px; /* تترك مساحة للشريط العلوي */
-    margin-bottom: 70px; /* تترك مساحة للقائمة السفلية */
-} 
-
                 </style>
                 
                 
@@ -346,7 +337,7 @@ text-decoration:none;
 <body>
 <main>
 <div align="center" >
-<div class="container">  <main>
+<div class="container">
 <!--+++++++++++++++++-->
     <div align="center" id="searchbar-container">
         <input id="searchbar" 
@@ -360,82 +351,91 @@ text-decoration:none;
               <!--+++++++++++++++++-->
 		<div id="status">
 
+
+
+
+			  
+        <!--+++++++++++++++++--> 
+     <button class="button"><div class="background"><img src="logo/max11.svg" onerror="handleImageError(this)"></div>
+        <div class="name-tv">beIN  MAX 1 AR</div>
+        <div class="serveur">سيرفرات المشاهدة</div> 
+           <div class="number-container">
+ <div class="number" onclick="playStream()"onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">FHD</div>
+ <div class="number" onclick="playStream()"onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">HD</div>
+  <div class="number" onclick="playStream()"onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">SD</div>
+ </div ></button> 
+                                         
+        <!--+++++++++++++++++-->        
+           <button class="button"><div class="background"><img src="logo/max2.svg" alt="app tv"onerror="handleImageError(this)"></div >
+        <div class="name-tv">beIN  MAX 2 AR</div>
+        <div class="serveur">سيرفرات المشاهدة</div> 
+                      <div class="number-container">
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">FHD</div>
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">HD</div>
+  <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">SD</div>
+ </div ></button>     
+        <!--+++++++++++++++++--> 
+         <!--+++++++++++++++++-->        
+           <button class="button"><div class="background"><img src="logo/max3.svg" alt="app tv"onerror="handleImageError(this)"></div >
+        <div class="name-tv">beIN  MAX 3 EN</div>
+        <div class="serveur">سيرفرات المشاهدة</div> 
+                      <div class="number-container">
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">FHD</div>
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">HD</div>
+  <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">SD</div>
+ </div ></button>  
+        <!--+++++++++++++++++-->        
+      <!--+++++++++++++++++-->        
+           <button class="button"><div class="background"><img src="logo/max4.svg" alt="app tv"onerror="handleImageError(this)"></div >
+        <div class="name-tv">beIN  MAX 4 FR</div>
+        <div class="serveur">سيرفرات المشاهدة</div> 
+                    <div class="number-container">
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">FHD</div>
+ <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">HD</div>
+  <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1">SD</div>
+ </div ></button> 
+ 
+ </div>
  
  
- <button class="button">
-    <div class="background">
-      <img src="logo/max11.svg" alt="logo" onerror="handleImageError(this)">
-    </div>
-    <div class="name-tv">beIN MAX 1 AR</div>
-    <div class="serveur">سيرفرات المشاهدة</div>
-    <div class="number-container">
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('FHD')">FHD</div>
-      
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('HD')">HD</div>
-      
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('SD')">SD</div>
-    </div>
-  </button>
-
- <button class="button">
-    <div class="background">
-      <img src="logo/max11.svg" alt="logo" onerror="handleImageError(this)">
-    </div>
-    <div class="name-tv">beIN MAX 2 AR</div>
-    <div class="serveur">سيرفرات المشاهدة</div>
-    <div class="number-container">
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('FHD')">FHD</div>
-      
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('HD')">HD</div>
-      
-      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('SD')">SD</div>
-    </div>
-  </button>
-  
-  
-   </main>
-  <script>
-    function playStream(quality) {
-      const packageName = "co.wuffy.player";
-      const streamLink = `intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=${packageName};end`;
-      const downloadLink = "https://play.google.com/store/apps/details?id=" + packageName;
-
-      try {
-        // محاولة فتح الرابط باستخدام Intent
+ <script>
+function playStream(quality) {
+  const streamLink = `intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end`;
+  window.open(streamLink);
+}
+</script>
+ <script>
+    const packageName = "co.wuffy.player";
+    const streamLink = "intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=" + packageName + ";end";
+    const downloadLink = "رابط التحميل";
+    
+    let appInstalled = localStorage.getItem("appInstalled");
+    
+    const playStream = () => {
+      if (appInstalled === "true") {
         window.location.href = streamLink;
-      } catch (error) {
-        // إذا لم يكن التطبيق مثبتًا
-        Swal.fire({
-          title: "تطبيق غير مثبت",
-          text: "تطبيق Wuffy Player غير مثبت. هل ترغب بتحميله الآن؟",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonText: "تحميل التطبيق",
-          cancelButtonText: "إلغاء"
-        }).then((result) => {
-          if (result.isConfirmed) {
-            window.open(downloadLink, "_blank");
-          }
-        });
+      } else {
+        checkAppInstallation();
       }
-    }
-
-    // التنقل باستخدام لوحة التحكم عن بعد
-    document.addEventListener('keydown', function (e) {
-      const focusableElements = document.querySelectorAll('.number');
-      const focusableArray = Array.prototype.slice.call(focusableElements);
-      const currentIndex = focusableArray.indexOf(document.activeElement);
-
-      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-        const nextIndex = (currentIndex + 1) % focusableArray.length;
-        focusableArray[nextIndex].focus();
-      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-        const prevIndex = (currentIndex - 1 + focusableArray.length) % focusableArray.length;
-        focusableArray[prevIndex].focus();
+    };
+    
+    const downloadApp = () => {
+      window.location.href = downloadLink;
+    };
+    
+    const checkAppInstallation = () => {
+      const intent = streamLink;
+      const a = document.createElement("a");
+      a.href = intent;
+      if (a.click() !== undefined) {
+        localStorage.setItem("appInstalled", "true");
+        window.location.href = streamLink;
+      } else {
+        document.getElementById("status").innerHTML = "يجب تحميل التطبيق أولاً";
       }
-    });
+    };
   </script>
- 
+ </main>
  <script>
 // Toggle search bar visibility
 function toggleSearchBar() {
