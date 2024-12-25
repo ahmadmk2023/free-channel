@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="AR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beIN SPORTS MAX</title>
+  <link href="logo/0.png" rel="icon" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+
+    <!----------  اكواد استايل القائمة  ------------>
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Russo+One&display=swap');
+
+         body {
+            margin: 0;
+     font-family: "Tajawal", sans-serif;
+     font-weight: 300;
+     font-style: normal;
+        }
+
+        .topnav { 
+        border-top : 3px solid #FFD700;  
+        z-index: 2; /* لضمان ظهوره فوق المحتوى */
+        position: fixed;
+        overflow: hidden;
+        border-radius:4px;
+        background-image: linear-gradient(132deg, #3c4a71 0%, #339a8a 100%);
+        top: 0;
+        height: 58px;
+        width: 100%;
+        box-shadow: 5px 5px 7px #fff;
+}  
+
+        .topnav a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 13px 13px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+       .topnav a:focus, .topnav a:hover {
+ background: #ccc;
+    color: #000;
+    outline: none;
+    border: 2px solid #ff0066;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 40px #ff0066, 0 0 80px #ff0066, 0 0 160px #ff0066, 0 0 320px #ff0066;  
+}
+.topnav a:focus svg path,
+.topnav a:hover svg path {
+  fill: #000; /* تغيير لون الملء للمسار إلى الأسود */
+  outline: none; /* إزالة تأثير التركيز الافتراضي */
+  border-radius: 8px;
+  border: 2px solid #ff0066;
+}
+        .topnav-centered a {
+
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .topnav-right {
+            float: right;
+        }
+
+        /* Responsive navigation menu (for mobile devices) */
+        @media screen and (max-width: 100%) {
+            .topnav a,
+            .topnav-right {
+                float: none;
+                display: block;
+            }
+
+            .topnav-centered a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+                color: #ffff;
+            }
+        }
+    </style> 
+    <head>
+
+        <body>
+
+    
+
+            <!-- lçaima l3lwia and-->
+            
+            <html>
+<head>
+    
+    <style>
+   body {
+                height: 100%;
+                margin: auto;
+                position: relative;
+           background:#339a8a;
+             background-position: center;
+                align-items: center;
+                justify-content: center;
+           
+            }
+
+           .button {
+                 position: relative;
+                align:center;
+                display: inline-block; /* لجعل الزر عنصراً مستطيل الشكل */
+            padding:2px; /* تعيين الهامش الداخلي للزر */
+            border-radius: 8px; /* تدوير الزوايا لتصميم أفضل */
+            width: 155px;
+            height: 190px;
+                margin: 6px;
+              border-color: #000;
+                 background: #3c4a71; 
+            }
+
+       .background {
+	background: linear-gradient(to top, #669999 0%, #fff 100%);
+    width: 100%; /* تحديد عرض الخلفية ليمتد على الزر بالكامل */
+    height: 41%; /* تحديد ارتفاع الخلفية ليمتد على الزر بالكامل */
+    border-radius: 8px; /* تعيين شكل الحواف */
+    border-color: #fff;
+    display: flex; /* استخدام Flexbox لمحاذاة العناصر بشكل مرن */
+    justify-content: center; /* محاذاة العناصر بالوسط أفقيًا */
+    align-items: center; /* محاذاة العناصر بالوسط عموديًا */
+}
+
+          button img {
+    height: 100px;
+    height: 70px;
+    border: 1px solid #fff;
+    display: block; /* جعل الصورة عنصراً بلوك لضمان تناسق العرض */
+    border-radius: 8px; /* تحديد إطار بسمك 2 بكسل ولون أزرق */
+
+}
+ #remot:focus,#remot:hover {
+         background: #ccc; /* لون	 خلفية الزر */
+         color: #000 ;
+          border-radius: 50%;
+          outline: none; /* إزالة تأثير الـ focus الافتراضي */
+          border-radius: 8px; border: 2px solid #ff0066;    box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 40px #ff0066, 0 0 80px #ff0066, 0 0 160px #ff0066, 0 0 320px #ff0066;  
+            transform: scale(1.5);
+        }
+  
+            /* .ازالة شريط التمرير اسفل المدونة*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+       .expandable-menu {
+      width: 20px; 
+      height: 20px;
+      padding: 0px 0px;
+    }     
+
+
+.serveur,.name-tv {
+            padding: 2px; /* تعيين الهامش الداخلي للزر */
+            text-align: center;
+            font-size: 15px; /* حجم الخط النسبي */
+            color: #fff;
+            font-weight: bold;
+            display: flex; /* لتفعيل align-items و justify-content */
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap; /* لمنع النصوص الطويلة من الانتقال للسطر التالي */
+            overflow: hidden; /* إخفاء النص الزائد */
+            border-radius: 1vw; /* نصف قطر الحدود النسبي */
+            border: 0.3vw solid gold; /* حدود النسبي */
+            position: relative;
+            width: 140px; /* عرض الحاوية */
+            height: 18px;
+            margin-top: 4px;
+        }
+      .number-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 5px;
+          
+        }
+
+        .number {
+        
+            width: 30px;
+            height: 30px;
+             background:#339a8a;
+            border-radius: 50%;
+             border:3px solid #333;
+            color: #FFF;
+         font-size: 12px;
+         font-weight: bold  ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+       a{
+color: black;
+text-decoration:none;
+}
+#al{
+color: yellow;
+text-decoration:none;
+
+}
+   main {
+    padding: 5px;position: relative;
+    margin-top: 60px; /* تترك مساحة للشريط العلوي */
+    margin-bottom: 70px; /* تترك مساحة للقائمة السفلية */
+}
+        
+#searchbar-container {
+    position: relative;
+    width: 70%;
+    margin: 10px auto;
+    direction: rtl;
+
+}
+ #searchbar:focus,#searchbar:hover {
+       background: #ccc;
+    color: #000;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #ff0066;
+    transition-delay: 0s, 1s;
+    box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066;
+    }
+#searchbar {
+    width: 100%;
+    padding: 10px;margin-top:10px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 35px;
+    border: 2px solid gold;
+    box-sizing: border-box;
+    display: none; /* Initially hide the search bar */
+}
+
+#searchbar.show {
+    display: inline-block;
+}
+
+#close-icon {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: grey;
+    display: none; /* Initially hide the close icon */
+}
+
+#close-icon.show {
+    display: block;
+}
+
+#close-icon:hover, #close-icon:focus {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+       
+        .tv-name-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+   main {
+    padding: 5px;position: relative;
+    margin-top: 30px; /* تترك مساحة للشريط العلوي */
+    margin-bottom: 70px; /* تترك مساحة للقائمة السفلية */
+} 
+
+                </style>
+                
+                
+          <!-- Top navigation -->
+            <div class="topnav">
+               <!-- icon-reply -->
+<div class="topnav-centered">
+                 <a><h5>beIN SPORTS MAX</h5> </a></div>
+               <!-- icon-reply -->
+
+                  <!-- icon-reply -->
+<a href="new ahmed tv V1.0.html "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"width="25" height="25"><path fill="#fff"d="M136.3 189.8L312.3 37.9C327.7 24.5 352 35.3 352 56v82.8c129.2 10.2 224 52.2 224 183.5 0 61.4-39.6 122.3-83.3 154.1-13.7 9.9-33.1-2.5-28.1-18.6 38.5-123.2-3.9-169.5-112.6-182v84.2c0 20.7-24.3 31.5-39.7 18.2L136.3 226.2c-11.1-9.6-11.1-26.8 0-36.3zm-128 36.3L184.3 378.2C199.7 391.4 224 380.7 224 360v-15.8l-108.6-93.8A56 56 0 0 1 96 208a56 56 0 0 1 19.4-42.4L224 71.8V56c0-20.7-24.3-31.5-39.7-18.2L8.3 189.8c-11.1 9.6-11.1 26.8 0 36.3z"/></svg></a>
+                   <!-- icon-reply -->
+                   
+                 <!-- icon-logo -->
+<a > <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="24px"viewBox="0 0 24 24" height="24px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M18 4l2 3h-3l-2-3h-2l2 3h-3l-2-3H8l2 3H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4m-6.75 11.25L10 18l-1.25-2.75L6 14l2.75-1.25L10 10l1.25 2.75L14 14l-2.75 1.25m5.69-3.31L16 14l-.94-2.06L13 11l2.06-.94L16 8l.94 2.06L19 11l-2.06.94z" fill="#fff"></path></svg>
+        </a>
+      
+   <!-- icon-logo -->
+                
+   <!-- icon-search -->                
+<div class="topnav-right">
+<a tabindex="1" href="javascript:void(0)" id="search-icon"><svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" width="25" height="25" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#fff" stroke-width="4" d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+            </svg></a>
+                    <!-- icon-search -->
+
+                </div>
+
+            </div>                           
+</head>
+<body>
+<main>
+<div align="center" >
+<div class="container">  <main>
+<!--+++++++++++++++++-->
+    <div align="center" id="searchbar-container">
+        <input id="searchbar" 
+               onkeyup="search_animal();" 
+               type="text" 
+               name="search" 
+               placeholder="ابحث عن القناة..." 
+               tabindex="1">
+        <i class="fas fa-times" tabindex="1"id="close-icon" onclick="toggleSearchBar()"></i>
+    </div>
+              <!--+++++++++++++++++-->
+		<div id="status">
+
+ 
+ 
+ <button class="button">
+    <div class="background">
+      <img src="logo/max11.svg" alt="logo" onerror="handleImageError(this)">
+    </div>
+    <div class="name-tv">beIN MAX 1 AR</div>
+    <div class="serveur">سيرفرات المشاهدة</div>
+    <div class="number-container">
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('FHD')">FHD</div>
+      
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('HD')">HD</div>
+      
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('SD')">SD</div>
+    </div>
+  </button>
+
+ <button class="button">
+    <div class="background">
+      <img src="logo/max11.svg" alt="logo" onerror="handleImageError(this)">
+    </div>
+    <div class="name-tv">beIN MAX 2 AR</div>
+    <div class="serveur">سيرفرات المشاهدة</div>
+    <div class="number-container">
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('FHD')">FHD</div>
+      
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('HD')">HD</div>
+      
+      <div class="number" onclick="window.open('intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=co.wuffy.player;end ')" id="remot" tabindex="1" onclick="playStream('SD')">SD</div>
+    </div>
+  </button>
+  
+  
+   </main>
+  <script>
+    function playStream(quality) {
+      const packageName = "co.wuffy.player";
+      const streamLink = `intent://stream.fushaar.link/movie/45132/45132.mp4/chunk.m3u8?wmsAuthSign=#Intent;scheme=https;package=${packageName};end`;
+      const downloadLink = "https://play.google.com/store/apps/details?id=" + packageName;
+
+      try {
+        // محاولة فتح الرابط باستخدام Intent
+        window.location.href = streamLink;
+      } catch (error) {
+        // إذا لم يكن التطبيق مثبتًا
+        Swal.fire({
+          title: "تطبيق غير مثبت",
+          text: "تطبيق Wuffy Player غير مثبت. هل ترغب بتحميله الآن؟",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "تحميل التطبيق",
+          cancelButtonText: "إلغاء"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.open(downloadLink, "_blank");
+          }
+        });
+      }
+    }
+
+    // التنقل باستخدام لوحة التحكم عن بعد
+    document.addEventListener('keydown', function (e) {
+      const focusableElements = document.querySelectorAll('.number');
+      const focusableArray = Array.prototype.slice.call(focusableElements);
+      const currentIndex = focusableArray.indexOf(document.activeElement);
+
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        const nextIndex = (currentIndex + 1) % focusableArray.length;
+        focusableArray[nextIndex].focus();
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        const prevIndex = (currentIndex - 1 + focusableArray.length) % focusableArray.length;
+        focusableArray[prevIndex].focus();
+      }
+    });
+  </script>
+ 
+ <script>
+// Toggle search bar visibility
+function toggleSearchBar() {
+    let searchbar = document.getElementById('searchbar');
+    let closeIcon = document.getElementById('close-icon');
+    let isVisible = searchbar.classList.contains('show');
+
+    if (isVisible) {
+        searchbar.classList.remove('show');
+        closeIcon.classList.remove('show');
+    } else {
+        searchbar.classList.add('show');
+        closeIcon.classList.add('show');
+        searchbar.focus();  // Set focus on the search bar when it is displayed
+    }
+}
+
+// Filter buttons based on search input
+function search_animal() {
+    let input = document.getElementById('searchbar').value.trim().toLowerCase();
+    let buttons = document.querySelectorAll('.button');
+
+    buttons.forEach(button => {
+        let buttonText = button.textContent.toLowerCase();
+        if (buttonText.includes(input)) {
+            button.classList.remove('hidden');
+        } else {
+            button.classList.add('hidden');
+        }
+    });
+}
+
+// Add event listener to handle search icon click
+document.getElementById('search-icon').addEventListener('click', toggleSearchBar);
+
+// Optional: Add event listener for a specific keypress
+document.addEventListener('keydown', function(event) {
+    if (event.key === '8' && event.key === '58') {
+        searchAnimals();
+    }
+});
+
+function searchAnimals() {
+    // Implement additional search functionality if needed
+    console.log('Searching for animals...');
+}
+
+// Add event listener to close icon click
+document.getElementById('close-icon').addEventListener('click', function() {
+    document.getElementById('searchbar').classList.remove('show');
+    document.getElementById('close-icon').classList.remove('show');
+});
+</script>
+
+
+	
+  <script>
+function handleImageError(img) {
+  img.src = 'logo/0.png';
+}
+</script>
+
+ </div>
+        </div>
+    </div>
+</body>
+</html>
+
